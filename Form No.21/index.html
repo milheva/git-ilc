@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form No.21</title>
+    <style>
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 300px;
+      }
+
+      label {
+        margin-bottom: 8px;
+      }
+
+      input,
+      select {
+        margin-bottom: 16px;
+        padding: 8px;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><b>Halaman Register</b></h1>
+    <form>
+      <label for="email">Email:</label>
+      <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="address@gmail.com"
+      />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="password"
+      />
+
+      <label for="foto">Foto Profil:</label>
+      <input type="file" id="foto" name="foto" />
+
+      <label for="ttl">Tanggal Lahir:</label>
+      <input type="date" id="ttl" name="ttl" />
+
+      <label for="jk">Gender:</label>
+      <select id="jk" name="jk">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
